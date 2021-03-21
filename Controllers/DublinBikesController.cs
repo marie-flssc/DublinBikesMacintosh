@@ -33,5 +33,9 @@ namespace DublinBikes_Macintosh.Controllers
 
             return View();
         }
+        public IActionResult HomeBike()
+        {
+            return View();
+        }
     }
 }

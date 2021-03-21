@@ -28,6 +28,24 @@ namespace DublinBikes_Macintosh.Controllers
             return View();
         }
 
+        public IActionResult HomeBike()
+        {
+            return View();
+        }
+
+        public IActionResult Find()
+        {
+            return View();
+        }
+        public IActionResult Price()
+        {
+            return View();
+        }
+        public IActionResult Rent()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
