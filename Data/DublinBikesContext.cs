@@ -3,17 +3,16 @@ using Microsoft.EntityFrameworkCore;
 using DublinBikes_Macintosh.Models;
 namespace DublinBikes_Macintosh.Data
 {
-    public class DublinBikesContext
+    public class DublinBikesContext : DbContext
     {
-        public class MvcMovieContext : DbContext
+
+        public DublinBikesContext(DbContextOptions<DublinBikesContext> options) : base(options)
         {
-            public MvcMovieContext(DbContextOptions<MvcMovieContext> options) : base(options)
-            {
-
-            }
-
-            public DbSet<Bikes> Bikes { get; set; }
 
         }
+
+        public DbSet<Bikes> Bikes { get; set; }
+
+
     }
 }

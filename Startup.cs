@@ -1,3 +1,4 @@
+using DublinBikes_Macintosh.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,9 @@ namespace DublinBikes_Macintosh
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            /*services.AddDbContext<DublinBikesContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DublinBikesContext")));*/
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
