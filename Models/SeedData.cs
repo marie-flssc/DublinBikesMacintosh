@@ -1,11 +1,14 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using DublinBikes_Macintosh.Data;
 using DublinBikes_Macintosh.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System.Threading.Tasks;
 
-namespace topull.Models
+
+namespace DublinBikes_Macintosh.Models
 {
     public class SeedData
     {

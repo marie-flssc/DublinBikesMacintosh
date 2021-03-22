@@ -16,12 +16,12 @@ namespace DublinBikes_Macintosh
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-            /*using (var scope = host.Services.CreateScope())
+            using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
 
                 try
-                {
+                { 
                     SeedData.Initialize(services);
                 }
                 catch (Exception ex)
@@ -30,7 +30,7 @@ namespace DublinBikes_Macintosh
                     logger.LogError(ex, "An error occured seeding the DB.");
                     //throw new Exception("error occured" + ex.Message);
                 }
-            }*/
+            }
             host.Run();
         }
 
