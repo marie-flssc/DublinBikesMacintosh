@@ -11,4 +11,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\CSS\" />
+    <Folder Include="Views\Home\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\css\CSS\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\CSS\style.css" />
+  </ItemGroup>
 </Project>
