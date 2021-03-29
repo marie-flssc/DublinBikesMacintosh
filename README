@@ -22,7 +22,13 @@ Once that was finally fixed, we had a working project at our disposal. Therefore
 Zoë, with Marie’s help, initially started working on the project by following the Microsoft pages, as said before, and on the controller. 
 Figuring out the controller took a long time, notably because of the fact that everything that we did in class, we had to adapt to the bicycles. 
 However, once she understood how everything worked, and how to adapt our old work to the new project, it turned out to not be too complicated. 
-Doing so also meant I had to modify a couple of other details in other folders to make the project work, such as Startup.cs and Program.cs. 
+Doing so also meant I had to modify a couple of other details in other folders to make the project work, such as Startup.cs and Program.cs.
+
+Salmann started working on the Views and the interface, after implementing them we decided to
+change the way our website will look. So he joined the Controller / Model team and implemented the
+method that help create/delete/display the bikes. Yet I had some trouble linking and retrieving
+data from the database because of the conflict Mac/Windows. But since our group is called
+MacintoshTeam I guess this is part of the challenge !!
 
 Therefore, the main problem we encountered was the compatibility between Mac and Windows. 
 We therefore had to focus most of our work on the two Window users, and test all of our code on their computers. 
