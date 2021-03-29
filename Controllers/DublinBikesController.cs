@@ -54,7 +54,7 @@ namespace DublinBikes_Macintosh.Controllers
         //POST: Bikes create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Number,Name,Adress,Latitude,Longitude")] Bikes bikes)
+        public async Task<IActionResult> Create([Bind("Id,Number,Name,Address,Latitude,Longitude")] Bikes bikes)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace DublinBikes_Macintosh.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Number,Name,Adress,Latitude,Longitude")] Bikes bikes)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Number,Name,Address,Latitude,Longitude")] Bikes bikes)
         {
             if (id != bikes.Id)
             {
