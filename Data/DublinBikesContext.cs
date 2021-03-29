@@ -12,7 +12,5 @@ namespace DublinBikes_Macintosh.Data
         }
 
         public DbSet<Bikes> Bikes { get; set; }
-
-
     }
 }

@@ -26,9 +26,9 @@ namespace DublinBikes_Macintosh
                 }
                 catch (Exception ex)
                 {
-                    var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "An error occured seeding the DB.");
-                    throw new Exception("error occured" + ex.Message);
+                    //var logger = services.GetRequiredService<ILogger<Program>>();
+                    //logger.LogError(ex, "An error occured seeding the DB.");
+                    //throw new Exception("error occured" + ex.Message);
                 }
             }
             host.Run();
