@@ -1,0 +1,31 @@
+-----Welcome to our README for the Dublin Bikes project.-----
+
+In this README, we will explain what each of us did, the problems we may have encountered, and how we worked as a group to fix said problems.
+
+The first step was to actually to divide our work equally, so that each of us had something to work on separately before assembling the whole entire project. 
+We initially started the project using the Microsoft guide, which was very helpful to understand what we were doing, and how to do it. 
+However, we quickly discovered that if we kept going like that, we were going to finish the project without actually working as a group. 
+Therefore, we decided to figure out how to work all together to build a working and functional project. 
+
+Hamza first started working on the controller and models, but encountered many problems and decided to pass this task to another group member to focus more on the look of the website. 
+Therefore, as a group with Hany, they worked on a separate CSS project, to then connect it to ours. 
+When Hany had compatibility problems on his Mac, they decided to work together on one computer. With the help of the internet, they learnt how to use CSS and HTML to do the website.
+
+Similarly, Hany initially worked with everyone on the controller but quickly encountered many problems, mostly due to the compatibility problems due to Mac. 
+Therefore, he and Hamza worked on CSS on Hamza’s computer. 
+Once again, they encountered more problems and therefore had to do a pair computing on Hamza’s computer. They both worked on a different project and then merged their work with the project.
+
+Marie was put in charge of the Databasse, as she was one of the only ones without a MacBook, and that working the Databasse on Mac is near to impossible. 
+Throughout the creation of this Databasse, we actually encountered quite a few problems, to the point where we had to completely change our way of working and use Heroku as a replacement. 
+Once that was finally fixed, we had a working project at our disposal. Therefore, the Migrations have become useless.
+
+Zoë, with Marie’s help, initially started working on the project by following the Microsoft pages, as said before, and on the controller. 
+Figuring out the controller took a long time, notably because of the fact that everything that we did in class, we had to adapt to the bicycles. 
+However, once she understood how everything worked, and how to adapt our old work to the new project, it turned out to not be too complicated. 
+Doing so also meant I had to modify a couple of other details in other folders to make the project work, such as Startup.cs and Program.cs. 
+
+Therefore, the main problem we encountered was the compatibility between Mac and Windows. 
+We therefore had to focus most of our work on the two Window users, and test all of our code on their computers. 
+Once we figured out a working system for all the members, it was just a matter of fixing our many problems as a group and figure out what we wanted to add to the project. 
+Finally, our project is finished, attractive and efficient.
+
