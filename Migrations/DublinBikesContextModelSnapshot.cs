@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DublinBikes_Macintosh.Migrations
-{
+{/*
     [DbContext(typeof(DublinBikesContext))]
     partial class DublinBikesContextModelSnapshot : ModelSnapshot
     {
@@ -50,5 +50,5 @@ namespace DublinBikes_Macintosh.Migrations
                 });
 #pragma warning restore 612, 618
         }
-    }
+    }*/
 }

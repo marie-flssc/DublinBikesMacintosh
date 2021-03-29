@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DublinBikes_Macintosh.Migrations
 {
+    /*
     [DbContext(typeof(DublinBikesContext))]
     [Migration("20210325152357_InitialCreate")]
     partial class InitialCreate
@@ -52,5 +53,5 @@ namespace DublinBikes_Macintosh.Migrations
                 });
 #pragma warning restore 612, 618
         }
-    }
+    }*/
 }
