@@ -1,7 +1,26 @@
-﻿@{
-    ViewData["Title"] = "Dublin Bike List";
-}
+﻿@model List<DublinBikes_Macintosh.Models.Bikes>
 
-<h2>The Dublin Bike List</h2>
-
-<p>Hello from our View Template!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Name)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Number">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Number">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Number">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

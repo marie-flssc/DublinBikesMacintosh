@@ -1,50 +1,64 @@
-﻿@model DublinBikes_Macintosh.Models.BikeViewModel;
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Bike[0].Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bike[0].Number)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bike[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bike[0].Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bike[0].Latitude)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bike[0].Longitude)
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in @Model.Bike)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(ModelItem => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(ModelItem => item.Number)
-                </td>
-                <td>
-                    @Html.DisplayFor(ModelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(ModelItem => item.Address)
-                </td>
-                <td>
-                    @Html.DisplayFor(ModelItem => item.Latitude)
-                </td>
-                <td>
-                    @Html.DisplayFor(ModelItem => item.Longitude)
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+﻿
+
+@model DublinBikes_Macintosh.Models.Bikes
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Bike</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="Number" />
+
+            <div class="form-group">
+                <label asp-for="Number" class="control-label"></label>
+                <input asp-for="Number" class="form-control" />
+                <span asp-validation-for="Number" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
